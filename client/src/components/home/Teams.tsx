@@ -1,9 +1,9 @@
 import { useCallback, useEffect, useState } from 'react';
-import InputField from './common/InputField';
-import type { Team } from '../types';
-import { DEFAULT_ERROR_MESSAGE, DEFAULT_MAX_TEAM, mainConfig } from '../constants';
+import InputField from '../common/InputField';
+import type { Team } from '../../types';
+import { DEFAULT_ERROR_MESSAGE, DEFAULT_MAX_TEAM, mainConfig } from '../../constants';
 import debounce from 'lodash/debounce';
-import Button from './common/Button';
+import Button from '../common/Button';
 
 const defaultEmptyTeam = { name: '' }
 const Teams = () => {

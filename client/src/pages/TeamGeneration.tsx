@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import GeneratedTeam from "../components/GeneratedTeam";
+import GeneratedTeam from "../components/team-generation/GeneratedTeam";
 import { useParams } from "react-router-dom";
 import { DEFAULT_ERROR_MESSAGE, mainConfig } from "../constants";
 import type { GeneratedTeams } from "../types";

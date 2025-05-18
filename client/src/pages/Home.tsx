@@ -1,6 +1,7 @@
-import Players from '../components/Players'
-import Teams from '../components/Teams'
-import Events from '../components/Events'
+import Events from '../components/home/Events'
+import Players from '../components/home/Players'
+import Teams from '../components/home/Teams'
+
 
 export default function Home() {
     return (

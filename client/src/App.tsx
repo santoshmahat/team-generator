@@ -1,15 +1,18 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Home from "./pages/Home";
-import TeamGeneration from "./pages/TeamGeneration";
+import { Suspense, lazy } from "react";
+
+const Home = lazy(() => import("./pages/Home"));
+const TeamGeneration = lazy(() => import("./pages/TeamGeneration"));
 
 export default function App() {
   return (
     <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/team-generation/:eventId" element={<TeamGeneration />} />
-      </Routes>
+      <Suspense fallback={<div>Loading...</div>}>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/team-generation/:eventId" element={<TeamGeneration />} />
+        </Routes>
+      </Suspense>
     </BrowserRouter>
-
-  )
+  );
 }

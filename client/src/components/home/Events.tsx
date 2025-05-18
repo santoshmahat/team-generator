@@ -1,7 +1,7 @@
 import { useState } from "react";
-import { DEFAULT_ERROR_MESSAGE, mainConfig } from "../constants";
 import { useNavigate } from "react-router-dom";
-import Button from "./common/Button";
+import { DEFAULT_ERROR_MESSAGE, mainConfig } from "../../constants";
+import Button from "../common/Button";
 
 const Events = () => {
     const [title, setTitle] = useState('');

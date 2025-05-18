@@ -1,10 +1,11 @@
 import { useCallback, useEffect, useState } from 'react';
-import InputField from './common/InputField';
-import RangeField from './common/RangeField';
+
 import debounce from 'lodash/debounce';
-import type { Player } from '../types';
-import { DEFAULT_ERROR_MESSAGE, DEFAULT_MAX_PLAYER, mainConfig } from '../constants';
-import Button from './common/Button';
+import type { Player } from '../../types';
+import { DEFAULT_ERROR_MESSAGE, DEFAULT_MAX_PLAYER, mainConfig } from '../../constants';
+import RangeField from '../common/RangeField';
+import InputField from '../common/InputField';
+import Button from '../common/Button';
 
 const defaultEmptyPlayer = { name: '', skill: 0 };
 
