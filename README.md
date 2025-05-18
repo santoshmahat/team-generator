@@ -1,6 +1,5 @@
 ## Description
-This is a fullstack application This is a Random Team Generator. It is a service designed to create random groups from a list of participants. Additionally, it offers the option to generate balanced
-teams based on the skill levels of the participants. The application manages players
+This is a fullstack application which is is a Random Team Generator. It is a service designed to create random groups from a list of participants. Additionally, it offers the option to generate balanced teams based on the skill levels of the participants. The application manages players
 and teams effectively and employs a fair team generation algorithm that takes
 player skill levels into account.
 
@@ -31,3 +30,11 @@ player skill levels into account.
   - Player table
   - Event table
   - EventTeamPlayer table
+
+## 📸 Screenshots
+
+### 🖥️ Home Page
+![Home Screen](client/public/Home.png)
+
+### 🖥️ Team Generation Page
+![Home Screen](client/public/TeamGeneration.png)

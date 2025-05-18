@@ -35,7 +35,7 @@ const Events = () => {
 
     return (
         <div className='flex-1'>
-            <h2 className="text-xl font-bold text-gray-800 mb-4">Team Generation</h2>
+            <h2 className="text-xl font-bold text-gray-800 mb-4">Event</h2>
             {error && <p className='text-red-500 text-sm mb-4'>{error}</p>}
 
             <div className="flex flex-col space-y-4">
