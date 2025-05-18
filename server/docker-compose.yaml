@@ -1,0 +1,22 @@
+version: '3'
+services:
+  server:
+    build:
+      dockerfile: Dockerfile.dev
+      context: .
+    env_file:
+      - .env
+    ports:
+      - "4001:4001"
+    depends_on:
+      - mysql
+  
+  mysql:
+    image: mysql:latest
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=rtg_development
+      - MYSQL_USER=rtg
+      - MYSQL_PASSWORD=rtg
+    ports:
+      - "3306:3306"
